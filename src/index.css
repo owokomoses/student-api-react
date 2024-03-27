@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #007bff, #00bcd4);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* index.css */
+
+.student-form {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.student-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.student-form input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.student-form .btn button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-form .btn button:hover {
+  background-color: #0056b3;
+}
+
+.student-form .toastify {
+  font-size: 16px;
+}
+
+/* Toast Styles */
+.react-toastify-toast {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.react-toastify__toast--success {
+  background-color: #28a745;
+}
+
+.react-toastify__toast--error {
+  background-color: #dc3545;
+}
+
