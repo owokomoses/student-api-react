@@ -20,38 +20,49 @@ code {
 
 /* index.css */
 
+/* AddStudentForm.css */
+
 .student-form {
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.student-form label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 8px;
+.student-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
   color: #333;
 }
 
-.student-form input[type="text"] {
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  transition: border-color 0.3s ease;
 }
 
-.student-form input[type="text"]:focus {
-  border-color: #007bff;
+.form-group select {
+  appearance: none; /* Remove default arrow */
 }
 
-.student-form .btn button {
+.form-group button {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -61,12 +72,74 @@ code {
   transition: background-color 0.3s ease;
 }
 
-.student-form .btn button:hover {
+.form-group button:hover {
   background-color: #0056b3;
 }
 
-.student-form .toastify {
+/* Toast Styles */
+.react-toastify-toast {
+  font-family: Arial, sans-serif;
   font-size: 16px;
+}
+
+.react-toastify__toast--success {
+  background-color: #28a745;
+}
+
+.react-toastify__toast--error {
+  background-color: #dc3545;
+}
+
+/* Login.css */
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
 }
 
 /* Toast Styles */

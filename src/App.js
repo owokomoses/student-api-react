@@ -1,11 +1,14 @@
 import './App.css';
-import AddStudentForm from './components/AddStudentForm'
+import React from 'react';
+//import AddStudentForm from './components/AddStudentForm'
+import Login from './components/Login';
 
 function App() {
   return (
     //call our components
     <div className="App"> 
-    <AddStudentForm/>
+    {/* <AddStudentForm/> */}
+    <Login/>
     </div>
   );
 }
