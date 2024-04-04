@@ -5,8 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const AddStudentForm = () => {
 const [formData, setFormData] = useState({
-    first_name: '',
-    last_name: '',
+    firstname: '',
+    lastname: '',
     gender: '',
 });
 
@@ -24,8 +24,8 @@ const handleSubmit = async (e) => {
     await axios.post('http://localhost:4000/api/student/addStudent', formData);
     toast.success('Student added successfully!');
     setFormData({
-        first_name: '',
-        last_name: '',
+        firstname: '',
+        lastname: '',
         gender: '',
     });
     } catch (error) {
@@ -39,23 +39,23 @@ return (
     <form onSubmit={handleSubmit}>
         <h2>Add Student</h2>
         <div className="form-group">
-        <label htmlFor="first_name">First Name:</label>
+        <label htmlFor="firstname">First Name:</label>
         <input
             type="text"
-            id="first_name"
-            name="first_name"
-            value={formData.first_name}
+            id="firstname"
+            name="firstname"
+            value={formData.firstname}
             onChange={handleChange}
             required
         />
         </div>
         <div className="form-group">
-        <label htmlFor="last_name">Last Name:</label>
+        <label htmlFor="lastname">Last Name:</label>
         <input
             type="text"
-            id="last_name"
-            name="last_name"
-            value={formData.last_name}
+            id="lastname"
+            name="lastname"
+            value={formData.lastname}
             onChange={handleChange}
             required
         />
